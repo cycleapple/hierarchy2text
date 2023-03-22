@@ -54,22 +54,18 @@ export class FolderStructureProvider {
     return treeItems;
   }
 
-  public async removeFolderFromTree() {
-    const folderName = await vscode.window.showInputBox({
-      prompt: 'Enter folder name to remove from tree:',
-      ignoreFocusOut: true,
-    });
-
+  public async removeFolderFromTree(folderName: string) {
     if (!folderName) {
       return;
     }
-
+  
     const treeItems: TreeItem[] = this.getChildrenFromPath(this.workspaceRoot!, true);
     this.removeFolderFromTreeItems(treeItems, folderName);
     const folderStructureText = this.buildFolderStructureText(treeItems, '');
     const doc = await vscode.workspace.openTextDocument({ content: folderStructureText });
     vscode.window.showTextDocument(doc);
   }
+  
 
   private removeFolderFromTreeItems(items: TreeItem[], folderName: string) {
     for (let i = items.length - 1; i >= 0; i--) {
