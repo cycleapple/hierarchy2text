@@ -1,3 +1,4 @@
+[English](https://github.com/cycleapple/hierarchy2text) | 繁體中文
 # Hierarchy2Text
 
 - 這個 VS Code 擴充套件可以為目前開啟的專案產生資料夾樹狀結構的文字版。

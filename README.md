@@ -1,3 +1,4 @@
+English | [繁體中文](https://github.com/cycleapple/hierarchy2text/blob/main/README_zh.md)
 # Hierarchy2Text
 - This VS Code extension generates the folder tree structure in text for the currently opened project.
 
@@ -13,12 +14,12 @@
 # Usage
 ## Generate Folder Structure Text
 1. Open the project you want to generate the folder structure for
-2. Open the Command Palette (or press Ctrl+Shift+P)
+2. Open the Command Palette (or press `Ctrl+Shift+P`)
 3. Search for "Folder Structure: Generate Folder Structure Text" and select it
 4. The generated folder structure will be displayed in a new text document
 ## Remove Folder From Folder Structure
 1. Open the project you want to remove a folder from the folder structure for
-2. Open the Command Palette (or press Ctrl+Shift+P)
+2. Open the Command Palette (or press `Ctrl+Shift+P`)
 3. Search for "Folder Structure: Remove Folder From Structure" and select it
 4. Enter the name of the folder you want to remove in the input box and press Enter
 5. The updated folder structure will be displayed in a new text document
